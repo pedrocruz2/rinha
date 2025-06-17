@@ -14,4 +14,4 @@ Decisões Arquiteturais:
 
 - Todo processo performance-sensitive acontece via fila, podendo acontecer paralelamente e facilmente escalável aumentando o número / potência dos consumers dessa fila.
 - Bucket S3 pra deixar toda a logica de upload de arquivo desacoplada do backend, assim so fazendo leitura (muito mais eficiente)
-
+- Redis para otimizar o máximo possível processos intrinsecamente síncronos
